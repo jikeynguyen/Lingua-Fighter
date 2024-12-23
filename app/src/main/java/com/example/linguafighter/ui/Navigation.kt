@@ -21,7 +21,7 @@ enum class linguafighterScreen() {
 }
 
 @Composable
-fun linguafighterApp(
+fun LinguafighterApp(
     sharedViewModel: SharedViewModel = viewModel(),
     gameViewModel : GameViewModel = viewModel(),
     navController : NavHostController = rememberNavController()

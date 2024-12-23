@@ -8,7 +8,6 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import com.example.linguafighter.R
 
-
 val Poppins = FontFamily(
     Font(R.font.poppins_medium),
     Font(R.font.poppins_semibold)
