@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Lingua Fighter</string>
+    <string name="play">PLAY</string>
+    <string name="pause">Pause</string>
+    <string name="pick_the_best_option">Pick the best option that translates the highlighted word.</string>
+    <string name="french">French</string>
+    <string name="spanish">Spanish</string>
+    <string name="german">German</string>
+    <string name="how_strong">How Strong is your %s?</string>
+    <string name="question">QUESTION</string>
+    <string name="time">TIME</string>
+    <string name="score">SCORE</string>
+    <string name="resume">RESUME</string>
+    <string name="new_trivia">NEW GAME</string>
+    <string name="exit">EXIT</string>
+    <string name="audio">Audio</string>
+    <string name="toggle_audio">Enable or Disable audio</string>
+    <string name="trivia_paused">GAME PAUSED</string>
+    <string name="trivia">GAME</string>
+    <string name="you_will_have_10_seconds_to_answer_each_question">You will have 10 seconds to answer each question.</string>
+    <string name="the_faster_you_answer_the_higher_your_score">The faster you answer, the higher your score.</string>
+    <string name="question_count">%1$s/10</string>
+    <string name="current_score">%1$s</string>
+    <string name="time_value">:%1$s</string>
+    <string name="play_to_find_out">Play to find out</string>
+    <string name="replay_trivia">REPLAY GAME</string>
+    <string name="review_answers">REVIEW ANSWERS</string>
+    <string name="words_you_got_right">WORDS YOU GOT RIGHT</string>
+    <string name="answered_correctly">%1$s Of 10</string>
+    <string name="question_number">QUESTION %1$s</string>
+    <string name="back">Go back</string>
+</resources>
