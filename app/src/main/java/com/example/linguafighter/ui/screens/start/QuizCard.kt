@@ -41,7 +41,7 @@ fun QuizCard(
             )
 
             Text(
-                text = stringResource(id = R.string.how_strong, stringResource(id = language)),
+                text = stringResource(id = R.string.let_play, stringResource(id = language)),
                 style = MaterialTheme.typography.bodyMedium,
                 modifier = Modifier
                     .padding(bottom = dimensionResource(id = R.dimen.padding_small))
