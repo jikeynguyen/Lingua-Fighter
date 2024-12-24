@@ -56,7 +56,7 @@ fun TopBar(
 
                 LabelAndTextColumn(
                     label = stringResource(R.string.time),
-                    text = ":$time",
+                    text = "$time",
                     textColor = if (time < 5) {
                         MaterialTheme.colorScheme.error
                     } else {
