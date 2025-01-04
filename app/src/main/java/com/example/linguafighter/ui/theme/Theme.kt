@@ -152,6 +152,7 @@ fun linguafighterTheme(
   )
 }
 
+
 private fun setUpEdgeToEdge(view: View, darkTheme: Boolean) {
     val window = (view.context as Activity).window
     WindowCompat.setDecorFitsSystemWindows(window, false)

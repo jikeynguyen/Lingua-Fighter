@@ -70,6 +70,12 @@ val onSuccessDark = Color(0xFF0F380D)
 val successContainerDark = Color(0xFF275021)
 val onSuccessContainerDark = Color(0xFFBFF0B1)
 
+val ColorUserMessage = Color(0xFF03A9F4)
+val ColorModelMessage = Color(0xFF4CAF50)
+
+val Purple80 = Color(0xFFD0BCFF)
+
+
 
 
 

@@ -1,10 +1,12 @@
 package com.example.linguafighter.ui.screens.start
 
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
@@ -17,20 +19,19 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.linguafighter.R
-
-import com.example.linguafighter.ui.theme.linguafighterTheme
 import com.example.linguafighter.data.quizOptions
 import com.example.linguafighter.ui.shared.viewmodel.SharedUiEvent
-import com.example.linguafighter.ui.shared.viewmodel.SharedViewModel
+import com.example.linguafighter.ui.theme.linguafighterTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun StartScreen(
     onSharedEvent : (SharedUiEvent) -> Unit,
     onConfirmation: () -> Unit,
+    onChatClick: () -> Unit, // <-- Add this line
     modifier: Modifier = Modifier
+
 ) {
     var displayDialog by rememberSaveable { mutableStateOf(false) }
 
@@ -64,7 +65,22 @@ fun StartScreen(
                             vertical = dimensionResource(id = R.dimen.padding_small)
                         )
                 )
+
             }
+            item {
+                OutlinedButton(
+                    onClick = { onChatClick() },
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(
+                            horizontal = dimensionResource(id = R.dimen.padding_small),
+                            vertical = dimensionResource(id = R.dimen.padding_small)
+                        )
+                ) {
+                    Text(text = "Learn with AI")
+                }
+            }
+
         }
     }
 
@@ -84,7 +100,8 @@ fun StartScreenLightThemePreview() {
     linguafighterTheme {
         StartScreen(
             onSharedEvent = {},
-            onConfirmation = {}
+            onConfirmation = {},
+            onChatClick = {} // <-- Add this line
         )
     }
 }
@@ -97,7 +114,8 @@ fun StartScreenDarkThemePreview() {
     ) {
         StartScreen(
             onSharedEvent = {},
-            onConfirmation = {}
+            onConfirmation = {},
+            onChatClick = {} // <-- Add this line
         )
     }
 }

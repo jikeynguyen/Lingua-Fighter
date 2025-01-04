@@ -14,11 +14,13 @@ import com.example.linguafighter.ui.screens.start.StartScreen
 import com.example.linguafighter.ui.shared.viewmodel.SharedViewModel
 
 
-enum class linguafighterScreen() {
+enum class linguafighterScreen {
     Start,
     Game,
-    ReviewAnswers
+    ReviewAnswers,
+    Chat
 }
+
 
 @Composable
 fun LinguafighterApp(
@@ -36,7 +38,12 @@ fun LinguafighterApp(
                 onConfirmation = {
                     gameViewModel.initializeGame(questionDataset = sharedViewModel.fetchQuestions())
                     navController.navigate(route = linguafighterScreen.Game.name)
+                },
+                onChatClick = {
+                    // This will navigate to the Chat screen
+                    navController.navigate(route = linguafighterScreen.Chat.name)
                 }
+
             )
         }
 
@@ -56,6 +63,18 @@ fun LinguafighterApp(
             RevealAnswersScreen(
                 sharedUiState = sharedUiState,
                 navigateUp = { navController.navigateUp() }
+            )
+        }
+
+        composable(route = linguafighterScreen.Chat.name) {
+            val chatViewModel: ChatViewModel = viewModel()
+
+            ChatPage(
+                viewModel = chatViewModel,
+                onBackClick = {
+                    // Simply go back in the navigation stack
+                    navController.navigateUp()
+                }
             )
         }
     }
