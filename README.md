@@ -14,7 +14,7 @@ Lingua Fighter is a fun and interactive language learning application designed t
 
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/your-repo/lingua-fighter.git
+   git clone https://github.com/jikeynguyen/Lingua-Fighter.git
 Open the project in Android Studio.
 
 Build and run the project on a virtual or physical Android device (Android 8.0 and above).
