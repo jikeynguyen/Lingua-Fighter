@@ -23,10 +23,12 @@ Build and run the project on a virtual or physical Android device (Android 8.0 a
 Android Studio Flamingo or later.
 Android 8.0 (Oreo) or above.
 At least 1GB of free storage space.
+
+
 👥 Team Members
-Nguyen Nhat Truong
-Lam Quoc Dinh
-Nguyen Pham Diem Quynh
-Nguyen Do Tu Vy
-Nguyen Thi Phuong Thao
-Bui Nhu Y
+-Nguyen Nhat Truong
+-Lam Quoc Dinh
+-Nguyen Pham Diem Quynh
+-Nguyen Do Tu Vy
+-Nguyen Thi Phuong Thao
+-Bui Nhu Y
